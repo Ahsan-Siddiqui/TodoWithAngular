@@ -1,0 +1,41 @@
+install npm
+-> on your desire folder press control and then click right button and select open powershell
+
+-> check your node --version
+   check your npm  --version
+
+-> then write
+   npm install -g @angular/cli
+
+-> for create new project
+   ng new my-app
+
+-> for run your project
+   ng serve
+
+-> note: .ts file is use to show you how your module will work on browser
+
+-> install bootstrap and jquery on your project
+   npm install bootstrap
+   npm install jquery
+
+-> now change your angular.json file to connect your bootstrap and jquery with your project
+
+-> find architect property then inside it find styles array line then put this location on there
+   "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+-> Also put these below lines on scripts array
+   "./node_modules/bootstrap/dist/js/bootstrap.js",
+   "./node_modules/jquery/dist/jquery.js"
+
+-> To create new component in Angular type this command on your project command line interface
+   ng generate component MyComponents/todos 
+   ng g c MyComponents/todos (short form of generate component is g c)
+
+-> ngFor(Its provide us like for loop)
+-> Primitive-component(Its mean already generated component like button in html)
+-> Event Emmit(means to call someother event)
+
+-> ng build --prod (this command is use for production side)
+-> for github hosting (ng build --output-path docs --base-href todo-list) 
+   todo-list is your project name you can change it as your project name

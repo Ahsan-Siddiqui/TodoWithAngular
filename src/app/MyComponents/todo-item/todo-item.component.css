@@ -1,0 +1,12 @@
+.strike 
+{
+    text-decoration: line-through;
+}
+.card-header
+{
+    background-color: #07627e;
+}
+.card-header h5
+{
+    color: white;
+}
